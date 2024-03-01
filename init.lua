@@ -40,11 +40,17 @@ require("packer").startup(function(use)
   	},
 	use {"akinsho/toggleterm.nvim", tag = '*' },
 	-- use "jhlgns/naysayer88.vim",
+	use {"mkropat/vim-ezguifont"},
 	use "terrortylor/nvim-comment",
 	use "CreaturePhil/vim-handmade-hero"
 }
 end)
-
+-- resize the font size
+-- vim.keymap.set()
+vim.keymap.set("n", "<C-=>", "IncreaseFont<CR>", { noremap = true })
+vim.keymap.set("n", "<C-+>", "IncreaseFont<CR>", { noremap = true })
+vim.keymap.set("n", "<C-->", "DecreaseFont<CR>", { noremap = true })
+vim.keymap.set("n", "<C-0>", "ResetFontSize<CR>", { noremap = true })
 -- some
 vim.keymap.set("n", "<M-b>", ":Ex<CR>")
 

@@ -186,6 +186,11 @@ _G.packer_plugins = {
     path = "/home/deepdata/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
     url = "https://github.com/akinsho/toggleterm.nvim"
   },
+  ["vim-ezguifont"] = {
+    loaded = true,
+    path = "/home/deepdata/.local/share/nvim/site/pack/packer/start/vim-ezguifont",
+    url = "https://github.com/mkropat/vim-ezguifont"
+  },
   ["vim-go"] = {
     loaded = true,
     path = "/home/deepdata/.local/share/nvim/site/pack/packer/start/vim-go",
