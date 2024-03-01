@@ -7,7 +7,7 @@ require("packer").startup(function(use)
 	use { "ellisonleao/gruvbox.nvim" }
 	use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 	use {
-		'nvim-telescope/telescope.nvim', tag = '0.1.1',
+		'nvim-telescope/telescope.nvim', tag = '0.1.5',
 		 requires = { {'nvim-lua/plenary.nvim'} }
 	}
 	use({
@@ -39,7 +39,7 @@ require("packer").startup(function(use)
 		{'rafamadriz/friendly-snippets'}, -- Optional
   	},
 	use {"akinsho/toggleterm.nvim", tag = '*' },
-	use "jhlgns/naysayer88.vim",
+	-- use "jhlgns/naysayer88.vim",
 	use "terrortylor/nvim-comment",
 	use "CreaturePhil/vim-handmade-hero"
 }
@@ -135,7 +135,7 @@ require("nvim_comment").setup({
 -- TERMINAL SETUP
 require("toggleterm").setup{
 	direction = "horizontal",
-	size = 90,
+	size = 30,
 	open_mapping = [[<M-j>]]
 }
 

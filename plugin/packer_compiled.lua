@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/home/deepdata/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?.lua;/home/deepdata/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?/init.lua;/home/deepdata/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?.lua;/home/deepdata/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/home/deepdata/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/lua/5.1/?.so"
+local package_path_str = "/home/deepdata/.cache/nvim/packer_hererocks/2.1.1692716794/share/lua/5.1/?.lua;/home/deepdata/.cache/nvim/packer_hererocks/2.1.1692716794/share/lua/5.1/?/init.lua;/home/deepdata/.cache/nvim/packer_hererocks/2.1.1692716794/lib/luarocks/rocks-5.1/?.lua;/home/deepdata/.cache/nvim/packer_hererocks/2.1.1692716794/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/home/deepdata/.cache/nvim/packer_hererocks/2.1.1692716794/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -110,6 +110,7 @@ _G.packer_plugins = {
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
   grail = {
+    config = { "\27LJ\2\n3\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\ngrail\frequire\0" },
     loaded = true,
     path = "/home/deepdata/.local/share/nvim/site/pack/packer/start/grail",
     url = "https://github.com/chama-chomo/grail"
@@ -138,11 +139,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/deepdata/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
-  },
-  ["naysayer88.vim"] = {
-    loaded = true,
-    path = "/home/deepdata/.local/share/nvim/site/pack/packer/start/naysayer88.vim",
-    url = "https://github.com/jhlgns/naysayer88.vim"
   },
   ["nvim-cmp"] = {
     loaded = true,
@@ -203,6 +199,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: grail
+time([[Config for grail]], true)
+try_loadstring("\27LJ\2\n3\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\ngrail\frequire\0", "config", "grail")
+time([[Config for grail]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
