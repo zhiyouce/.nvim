@@ -110,7 +110,7 @@ lsp.preset("recommended")
 lsp.ensure_installed({
 --	"tsserver",
 	"gopls",
---	"eslint",
+	"eslint",
 --	"rust_analyzer",
 })
 
