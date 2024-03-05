@@ -108,10 +108,10 @@ local lsp = require("lsp-zero")
 lsp.preset("recommended")
 
 lsp.ensure_installed({
-	"tsserver",
+--	"tsserver",
 	"gopls",
-	"eslint",
-	"rust_analyzer",
+--	"eslint",
+--	"rust_analyzer",
 })
 
 lsp.set_preferences({
